@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import AmbianceCard from './components/AmbianceCard/AmbianceCard';
+import ambiances from './ambiancesData';
+import logo from './assets/Others/logo.png'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} alt={"Relax."} className="logo-image"/>
       </header>
+      <main className="App-content">
+        {ambiances.map(ambiance => (
+          <AmbianceCard key={ambiance.id} ambiance={ambiance} />
+        ))}
+      </main>
     </div>
   );
 }

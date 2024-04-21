@@ -1,0 +1,26 @@
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+
+.play-pause-btn {
+    color: #474747;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .play-pause-btn svg {
+    width: 48px;
+    height: 48px; 
+  }
+
+.volume-slider {
+    width: 100px;
+    height: 10px;
+    cursor: pointer;
+}
