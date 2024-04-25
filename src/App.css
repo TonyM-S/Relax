@@ -33,3 +33,13 @@
   margin-top: -1%;
   max-width: 1000px;
 }
+
+.footer {
+  color: #474747;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: small;
+  font-weight: 600;
+}

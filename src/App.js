@@ -15,6 +15,9 @@ function App() {
           <AmbianceCard key={ambiance.id} ambiance={ambiance} />
         ))}
       </main>
+      <footer className='footer'>
+        <p>&copy; tonysalgueiro.com - 2024</p>
+      </footer>
     </div>
   );
 }
